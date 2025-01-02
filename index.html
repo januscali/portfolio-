@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header class="hero">
         <div class="container">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Showcasing my journey in Computer Science</p>
+            <h1>Hello, I'm <span class="highlight">[Your Name]</span></h1>
+            <p>A Computer Science Enthusiast Passionate About Building and Innovating</p>
+            <a href="#projects" class="btn">Explore My Work</a>
         </div>
     </header>
 
-    <nav>
+    <nav class="navbar">
         <ul>
-            <li><a href="#about">About Me</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -26,21 +28,56 @@
 
     <main>
         <section id="about" class="about">
-            <h2>About Me</h2>
-            <p>
-                Hi! I'm [Your Name], a passionate Computer Science student. I specialize in building impactful software and enjoy solving real-world problems with code. Here's a glimpse of my journey and projects!
-            </p>
+            <div class="container">
+                <h2>About Me</h2>
+                <p>
+                    Hi there! I'm [Your Name], a Computer Science student driven by a passion for solving complex problems
+                    and creating impactful software solutions. I thrive on learning new technologies and enjoy tackling challenges
+                    with creativity and determination.
+                </p>
+            </div>
         </section>
 
         <section id="projects" class="projects">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Project 1: Portfolio Website</h3>
-                    <p>A vibrant and interactive portfolio to showcase my work and skills.</p>
-                    <a href="#" target="_blank">View Project</a>
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                        <h3>Project 1: Interactive Portfolio</h3>
+                        <p>A sleek, modern portfolio to showcase my work and engage potential employers.</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                        <h3>Project 2: AI-Powered Chatbot</h3>
+                        <p>An intelligent chatbot leveraging NLP to provide smart interactions.</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                        <h3>Project 3: Weather Dashboard</h3>
+                        <p>A vibrant dashboard showing real-time weather using API integrations.</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <h3>Project 2: Weather App</h3>
-                    <p>An intuitive app using APIs to provide real-time weather updates.</p>
-                    <a href="#" target="_blank">Vi
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>If you'd like to collaborate or discuss opportunities, feel free to reach out!</p>
+                <a href="mailto:your.email@example.com" class="btn">Email Me</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 [Your Name]. Built with ❤️ and creativity.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
